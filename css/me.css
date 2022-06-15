@@ -1,0 +1,124 @@
+.A {
+    position: relative;
+    margin-bottom: 30px;
+}
+.A .inner-box {
+    position: relative;
+}
+.A .photo img {
+    width: 100%;
+    transition: .5s ease;
+}
+.A:hover .photo img {
+	transform: scale(1.15);
+}
+.A .photo::before {
+    background: #00ffff;
+    bottom: 0px;
+    content: "";
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 9;
+    transition: all 0.4s ease-in-out 0s;
+}
+.A:hover .photo::before {
+    opacity: 1;
+}
+.A .photo {
+    position: relative;
+    border-radius:  5px;
+    overflow:  hidden;
+}
+.modal-header{
+	background-color: #1abc9c;
+}
+.D{font-size: 2.5rem;}
+.E{
+	border-bottom: 3px solid black;
+}
+@media (min-width:996px){
+	.p{font-size: 24px;}
+}
+.E a:hover{
+	text-decoration: none;
+	color: #a4edd0;
+}
+.E a{color: black;}
+.F{
+	position: absolute;
+	right: 16px;
+	top: 4px;
+}
+.G{border: 4px solid #a4edd0;}
+.A .B a {
+    background: white none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #9147ff;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%) scale(0.6);
+    transition: all 0.4s ease 0s;
+    width: 60px;
+}
+.A .B a:hover {
+    background: white none repeat scroll 0 0;
+    color: red;
+}
+.A:hover .B a {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+.A .B {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease 0s;
+    z-index: 10;
+}
+.A:hover .B {
+    opacity: 1;
+}
+.A .C {
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out 0s;
+    z-index: 12;
+}
+.A:hover .C {
+    opacity: 1;
+}
+
+.A .C h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transform: translateY(15px);
+    transition: all 0.4s ease-in-out 0s;
+}
+.A:hover .C h3,
+.A:hover .C span {
+    transform: translateX(0px);
+}
+.A .C span {
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 16px;
+    transform: translateY(15px);
+    transition: all 0.4s ease-in-out 0s;
+    text-transform: capitalize;
+}
